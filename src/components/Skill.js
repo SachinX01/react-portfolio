@@ -3,20 +3,20 @@ export default function Skill() {
   const [skill, setSkill] = useState("technical");
   const skills = {
     technical: [
-      { name: "Javascript", prof: 90 },
-      { name: "Nodejs", prof: 75 },
-      { name: "Tailwind CSS", prof: 60 },
-      { name: "Bootstrap", prof: 55 },
-      { name: "AWS", prof: 85 },
-      { name: "Cloud", prof: 89 },
+      { name: "JAVA", prof: 85 },
+      { name: "MYSQL", prof: 80 },
+      { name: "Frontend Development", prof: 75 },
+      { name: "IoT (basic)", prof: 60 },
+      { name: "WINDOWS", prof: 90 },
+      { name: "LINUX", prof: 70 },
     ],
     soft: [
-      { name: "Communication", prof: 90 },
+      { name: "Communication", prof: 85 },
       { name: "Leadership", prof: 75 },
-      { name: "Team Player", prof: 60 },
-      { name: "Time managment", prof: 55 },
-      { name: "Aadaptible", prof: 85 },
-      { name: "Creativity", prof: 89 },
+      { name: "Team Player", prof: 90 },
+      { name: "Time Management", prof: 80 },
+      { name: "Adaptability", prof: 85 },
+      { name: "Creativity", prof: 80 },
     ],
   };
 
@@ -26,9 +26,8 @@ export default function Skill() {
     if (prof >= 60) return "Intermediate";
     return "Beginner";
   };
-
   return (
-    <div className="min-h-screen w-full bg-gradient-to-r from-white to-gray-60 py-16">
+    <div id="skills" className="min-h-screen w-full bg-gradient-to-r from-white to-gray-60 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-700 via-purple-600 to-teal-600 bg-clip-text text-transparent">

@@ -12,23 +12,19 @@ export default function Contact() {
       ...prev,
       [name]: value,
     }));
-  };
-
-  const handleSubmit = (e) => {
+  };  const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:your-email@example.com?subject=Portfolio Contact: ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    const mailtoLink = `mailto:sachinkumarnishad321@gmail.com?subject=Portfolio Contact: ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
     window.location.href = mailtoLink;
-    setFormData({ name: "", email: "", message: "" });
-  };
+    setFormData({ name: "", email: "", message: "" });  };
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+    <div id="contact" className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
-            Contact US
+            Get In Touch
           </h2>
           <p className="mt-4 text-xl text-center text-gray-600 font-semibold">
-            Let's connect and explore
+            I'd love to hear from you! Drop me a message.
           </p>
         </div>
 
@@ -60,35 +56,32 @@ export default function Contact() {
               >
                 Email:
               </label>
-              <input
-                type="email"
+              <input                type="email"
                 id="email"
                 name="email"
-                placeholder="placeholder@gmail.com"
+                placeholder="your-email@example.com"
                 value={formData.email}
                 onChange={handlechange}
                 required
                 className="mt-1 block w-full border border-gray-300 rounded p-3"
               />
             </div>
-            <div>
-              <label
-                htmlFor="text"
+            <div>              <label
+                htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-5"
               >
-                message:
+                Message:
               </label>
-              <input
-                type="text"
+              <textarea
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder="Your message here..."
                 rows="4"
                 value={formData.message}
                 onChange={handlechange}
                 required
-                className="mt-1 block w-full border border-gray-300 rounded p-3"
-              />
+                className="mt-1 block w-full border border-gray-300 rounded p-3 min-h-[100px]"
+              ></textarea>
             </div>
 
             <button

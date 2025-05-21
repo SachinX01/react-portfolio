@@ -4,37 +4,29 @@ export default function Project() {
   const projects = [
     {
       id: 1,
-      title: "Weather App",
-      description: "A React app to check the weather.",
-      link: "https://example.com",
-      technologies: ["React", "OpenWeather API", "Tailwind CSS"],
+      title: "Home Automation System (IoT)",
+      description: "Developed a Raspberry Pi home automation system with Flask web server, enabling remote control of devices via a user-friendly interface.",
+      link: "#",
+      technologies: ["Raspberry Pi", "Python", "Flask", "HTML", "CSS"],
     },
     {
       id: 2,
-      title: "To-Do List",
-      description: "A simple task manager.",
-      link: "https://example.com",
-      technologies: ["React", "LocalStorage", "Tailwind CSS"],
+      title: "Learning App for Kids",
+      description: "A learning app for kids using Flutter (Dart) with an engaging user interface and interactive learning content across various subjects.",
+      link: "#",
+      technologies: ["Flutter", "Java", "JavaScript", "Firebase"],
     },
-    {
-      id: 3,
+    {      id: 3,
       title: "Portfolio Website",
       description:
-        "A modern portfolio website built with React and Tailwind CSS.",
-      link: "https://example.com",
-      technologies: ["React", "Tailwind CSS", "Responsive Design"],
-    },
-    {
-      id: 4,
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication.",
-      link: "https://example.com",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+        "Developed a personal portfolio website using WordPress, leveraging the Astra theme for a professional design and Elementor for a responsive interface.",
+      link: "#",
+      technologies: ["WordPress", "Astra theme", "Elementor", "Responsive Design"],
     },
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 py-16">
+    <div id="projects" className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
